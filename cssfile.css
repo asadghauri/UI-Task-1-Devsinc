@@ -1,8 +1,10 @@
+
 *
 {
     padding:0;
     margin:0;
     box-sizing: border-box;
+    max-width:100vw;
 }
 
 .main-body{
@@ -14,24 +16,21 @@
     position: relative;
    
 }
+
 .header {
     display: flex;
     padding: 1.25rem;
     justify-content:space-between;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    background-color: #9e9c9c;
     
 }
 .main-logo{
     display: flex;
     margin-left: 18rem;
-    color: rgb(116, 43, 43);
-    
-   
 }
 .nav-bar{
     display: flex;
-    margin-right: 18rem;
+    /* margin-right: 18rem; */
 }
 .nav-bar-list{
     display: flex;
@@ -40,60 +39,54 @@
     gap: 0.7rem;
 
 }
-.background-image{
-    background-color: rgba(97, 58, 58, 0.171);  
+.background-image
+{
+    position: absolute;
+    background-color: rgba(218, 32, 32, 0.171);  
     background-image: cover;
     background-repeat: no-repeat;
-    
-    width: 98.8vw;
-    height: 120vh;
- 
-    z-index: -50;
-}
+    min-height:30rem;
+    max-height:30rem;
+    z-index: -1;
+    width:98.9vw;
+    filter: brightness(60%);
+    object-fit: cover;
+  }
 .sub-title{
-    display: flex;
-    
-    margin-top: -27rem;
-    margin-right: 4rem;
-    margin-left: 15rem;
     padding: 6rem;
+    margin-left: 10rem;
+    margin-top: 9rem;
 }
 .s-t1{
     display:flex;
-    color: white;
-    font-size: 35px;
-    margin-top: -5rem;
-    margin-left: -5rem;
+    color: #ffffff;
+    font-size: 25px;
 }
 .s-t2{
     display:flex;
-    color: white;
-    font-size: 35px;
-    margin-top: 1rem;
-    margin-left: -23.1rem;
+    color:#ffffff;
+  
     font-size: 15px;
 }
 .s-t3{
     display: flex;
-    background-color: #4451ff;
+   background-color: #007bb6;
     color: white;
     padding: 15px 32px;
     display: inline-block;
-    margin: -90rem 0rem 0rem 17rem;   
+    margin: 1rem 0rem 0rem 0rem;   
 }
 .s-t4{
     display: flex;
     display: inline-block;
     margin: -20rem 0rem 0rem 1rem;   
 }
-
 .columns
 {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
     gap:2rem;
-     margin-top: 1rem;
+     margin-top: -5rem;
      margin-left: -1rem;
 }
 
@@ -101,7 +94,6 @@
 {
     display: flex;
     flex-direction: column;
-    
     background-color: white;
     width: 15rem;
     padding: 1rem;
@@ -115,57 +107,57 @@
     padding: 5px;
     font-size: 5rem;   
 }
-
-
-.cl1-para
-{
-    color: rgb(236, 236, 236);
-}
-
-
 .cl-info
 {
     display: flex;
     flex-direction: column;
 }
-.our-us{
-   display: flex;
+.agency-container{
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0rem 0rem 1rem; 
+ 
 }
-.agency{ 
-    display: flex;
-    margin: 5rem 0rem 0rem 16rem;   
-} 
-.image2{
-    margin: 3rem 0rem 0rem 16rem;           
-}
+ .whyus{
+  margin: 1rem 0rem 0rem 2rem;
+  padding-right: 10rem;
+  line-height: 2.2; 
 
-.whyus{
-    margin: 0rem 0rem 0rem 27rem; 
-}
+} 
+.agency{ 
+  line-height: 2.2; 
+    margin: 0rem 0rem 0rem 5rem;   
+} 
+
+.image2{
+    margin: 0rem 0rem 0rem 0rem;           
+} 
+
 .image-paragraph1{
-    margin: -20rem 0rem 0rem 34rem;
+    /* margin: -20rem 0rem 0rem 34rem; */
     color: #64a4ec; 
     font-family: sans-serif;
     font-weight: bold;
 }
 .image-paragraph2{
-    margin: 1.5rem 4rem 0rem 36rem;
-    padding-right: 15rem;
+    /* margin: 1.5rem 4rem 0rem 36rem; */
+  
     color: #b1b1b1; 
     
 }
 .image-paragraph3{
-    margin: 1.8rem 0rem 0rem 34rem;
+    /* margin: 1.8rem 0rem 0rem 34rem; */
     color: #000000; 
     font-family: sans-serif;
     font-weight: bold;
 }
 .grey-row-numbers{
+    display: flex;
     
-     display: flex;
+   
     padding-bottom: 1rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     justify-content: center;
     margin: 10rem 0.1rem 0rem 0.1rem;
     background-color: #f3f3f3;
@@ -237,7 +229,8 @@
 .the-leadership{
         font-weight: bold;    
         font-size: 1.1rem;
-        margin: 8rem 0rem 0rem 37rem; 
+        margin: 8rem 0rem 0rem 0rem; 
+        text-align: center;
 }
 .the-leadership-pictures{
     display: flex;
@@ -259,7 +252,6 @@
     
 }
 .the-leadership-pictures-row1-image{
-    height: 40vh;
     margin: -4.5rem 0.5rem 0rem 0.5rem;
     position: relative;
     width: 20vw;
@@ -288,20 +280,19 @@
     color: rgb(90, 90, 90);
 }
 .comma{
-        font-size: 10.1rem;
-        border: 1px solid rgb(255, 255, 255);
-        margin: -1rem 0rem 0rem 37rem; 
-        background-color: #ffffff;
+    font-size: 10.1rem;
+    text-align: center;
+      
+      
 }
 .comma-paragraph{
     text-align: center;
-    padding: 1rem;
-    padding-left: 28rem;
-    padding-right: 30rem;
+
+
 }
 .italian{
     text-align: center;
-    margin-left: -3rem;
+
     font-style: italic;
 }
 .big-grey-row{
@@ -315,47 +306,50 @@
    background-color: #f3c0c0;
 }
 .happy-customers{
-    font-weight: bold;    
-    font-size: 1rem;
-    border: 10px solid rgb(0, 17, 255);
-    /* margin: 0rem -90rem 0rem 35rem;  */
-    height:3vh;
-    
+  font-weight: bolder;
+  font-size: 1.5rem;
+
 }
 .our-services{
     text-align: center;
-    margin: 10rem 0rem 0rem 0rem; 
-    font-weight: bold;
+    margin: 5rem 0rem 0rem 0rem; 
+    font-weight: bolder;
+    font-size: 1.5rem;
+   
     
 }
 .six-box{
     display: flex;
-    border: 1px solid red;
-    background-color: #b1b1b1;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding: 3rem;
+}
+.box-modifier{
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
   
 }
 .box-1{
-    flex-direction: column;
-    margin: 0rem 0rem 10rem 15rem; 
-   height: 1vh;
-     width: 30vw;
-     padding-top: 1rem;
-     padding-bottom: 0rem;
-    text-align: center;
+  width: 25vw;
+text-align: center;
+margin: 7rem 0.3rem 1.1rem 1.1rem; 
+
 }
 .images3{
-    display: flex;
-border: 1px solid red;
-padding-top: 1rem;
-padding-bottom: 0rem;
-margin: 30rem -10rem -10rem 10rem; 
-margin-left: 10rem;  
+
+margin: 40rem 10rem 40rem 50rem; 
+justify-items: center;
+}
+.pic1{
+  margin-left: 12rem;
 }
 .site-footer
 {
     text-align: center;
   background-color:#a7a7a7;
-  padding:45px 0 20px;
+  padding:45px 0px 20px;
   font-size:15px;
   line-height:24px;
   color:#737373;
@@ -513,3 +507,149 @@ margin-left: 10rem;
     font-weight:600
   }
 }
+@media screen and (max-width: 770px ) {
+.header{
+  background-color: #29aafe;
+}
+.main-logo{
+          float: left;
+          margin-left: 0rem;
+          color: white;
+}
+.nav-bar-list{
+  
+  display: none;
+}
+.background-image{
+  height: 10vh;
+  width: 100vw;
+}
+.sub-title{
+  margin: 3rem 0rem 8rem -4rem;   
+font-size: 8px;
+}
+.s-t1{
+  display:flex;
+  color: #000000
+}
+.s-t2{
+  color: #000000;
+}
+.s-t4{
+  color: #000000;
+}
+.columns{
+  display: flex;
+  flex-direction: column;
+  margin: -10rem 0rem 0rem 2rem;  
+}
+.agency-container{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0rem 0rem -15rem;  
+}
+.image2{
+ max-width: 10rem;
+ min-width: 10rem;
+  margin: 0.01rem 0rem 0rem -1rem;  
+}
+.agency{
+  padding-left: 1rem;
+  margin: 0rem 0rem 0rem 15rem;    
+}
+.whyus{
+  margin: 0rem 0rem 0rem 15rem;  
+  line-height: 1.5;
+width: 100vw;
+text-align: left;
+}
+.image-paragraph2{
+  text-align: center;
+  margin-top: 3;
+}
+.grey-now-numbers{
+  display: flex;
+  justify-content: center;
+
+
+}
+.grey-row-numbers1-number
+{
+
+ margin: -6rem 0rem 0rem -15rem;   
+}
+.grey-row-numbers1-line{
+  margin: 0rem 0rem 0rem -16.5rem;  
+}
+.grey-row-numbers2{
+  margin: 5rem 0rem 0rem -23rem;  
+}
+.grey-row-numbers3{
+  margin: 12rem 0rem 0rem -3rem;  
+} 
+.the-leadership{
+  margin: 2rem 0rem 0rem 0rem; 
+}
+.the-leadership-pictures{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  text-align: center
+}
+.the-leadership-pictures-row1{
+  width: 100vw;
+}
+.the-leadership-pictures-row1-image-white1{
+  background-color:none;
+  opacity: 0.5;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.the-leadership-pictures-row1-image-white2
+{
+  background-color:none;
+  opacity: 0.5;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.comma{
+  margin: -5rem 0.5rem 0rem -1rem;
+}
+.comma-paragraph{
+  width: 50vw;
+  margin: 0rem 0.5rem 0rem 5.5rem;
+}
+.our-services{
+  margin: 5rem 0rem 0rem 0rem; 
+}
+.box-1{
+  margin-top: 0;
+  line-height: 1.1;
+ width: 110vw;
+}
+.images3
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0rem 0rem 0rem; 
+  width: 50vw;
+}
+.pic1{
+  flex-direction: column;
+  margin: 0rem 0rem 0rem 0rem; 
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

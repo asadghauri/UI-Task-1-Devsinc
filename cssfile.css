@@ -350,7 +350,7 @@ justify-items: center;
 .site-footer
 {
     text-align: center;
-  background-color:#a7a7a7;
+  background-color:#ececec;
   padding:45px 0px 20px;
   font-size:15px;
   line-height:24px;
@@ -367,14 +367,14 @@ justify-items: center;
 }
 .site-footer h6
 {
-  color:#fff;
+  color:rgb(46, 46, 46);
   font-size:16px;
   margin-top:5px;
   letter-spacing:2px
 }
 .site-footer a
 {
-  color:#737373;
+  color:#000000;
 }
 .site-footer a:hover
 {
@@ -474,7 +474,7 @@ justify-items: center;
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+  color:rgb(0, 0, 0);
   background-color:#29aafe
 }
 .social-icons.size-sm a
@@ -641,17 +641,3 @@ text-align: left;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
